@@ -10,7 +10,7 @@ scikit-learn
 scikit-video
 scipy
 six
-sklearn
+scikit-learn
 torch
 torchvision
 tqdm
