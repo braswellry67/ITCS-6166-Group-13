@@ -1,12 +1,12 @@
 **__pychache__
-
 checkpoints/
-
 datasets/
 results/
-
 conventional_codecs/hevc_hm
 conventional_codecs/vtm
 conventional_codecs/vvenc
 conventional_codecs/vvdec
-
+venv
+.git
+.vs
+cpks/
