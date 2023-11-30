@@ -1,7 +1,7 @@
 import streamlit as st
 import subprocess
 
-command = ["python", "run.py", "--mode", "test", "--log_dir", "results", "--config", "config/hdac.yaml", "--checkpoint", "cpks/hdac.pt", ">", "metrics.txt"] #command to run HDAC
+command = ["python", "run.py", "--mode", "test", "--log_dir", "results", "--config", "config/hdac.yaml", "--checkpoint", "cpks/hdac.pt"] #command to run HDAC
 st.header("HDAC - Hybrid Deep Animation Codec")
 st.subheader("HDAC is a hybrid model utilizing deep learning and conventional video codecs.")
 st.subheader("It specializes in improving the quality of videos in a low bitrate environments, such as poor internet connection.") #headers
@@ -18,6 +18,6 @@ if st.button("Run HDAC Model"):
     try:
         subprocess.run(command) #run HDAC command
         st.success("HDAC is now running. Check the console for the status of the process. " +
-        "The output metrics will save to the file output.txt. The produced videos will be in the results directory. Press Control + C to stop the execution.")
+        "The produced videos will be in the results directory. Press Control + C to stop the execution.")
     except Exception as e:
         st.error(f"Error running HDAC: {e}")
