@@ -58,5 +58,6 @@ This code base  contains source code from the following works:
 2. [Compressai](https://github.com/InterDigitalInc/CompressAI) for Learned image compression.
 3. [JPEG-AI](https://gitlab.com/wg1/jpeg-ai/jpeg-ai-qaf) for evaluation metrics.
 
-## Contact
-Email me as braswellry0607@gmail.com if there are any concerns regarding this project.
+## Additional Information
+Email me at braswellry0607@gmail.com if there are any concerns regarding this project.
+For additional assistance in setting up the code, consult this document: https://docs.google.com/document/d/1lF4P59IoeOmoaX6x3N7DGGZ8LMWUfIXGgIq4eVunSX0
