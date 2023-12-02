@@ -22,11 +22,12 @@ if selected_page == "HDAC Overview":
     st.subheader("HDAC, the Hybrid Deep-Animation Codec, is a hybrid model utilizing deep learning and conventional video codecs.")
     st.subheader("It specializes in improving the quality of videos in low bitrate environments, such as poor internet connections.")
     
-    st.image("images/hdac.jpg", caption="Hybrid Nature of HDAC")
-    st.subheader("This image demonstrates the hybrid nature of HDAC, utilizing three parts: The Animation Module, Conventional Video Codec, and Fusion Module.")
+    st.image("images/hdac.jpg", caption="HDAC Framework")
+    st.subheader("HDAC consists of three main parts: The Animation Module, Conventional Video Codec, and Fusion Module, each with their own unique function.")
     st.write("")
-    st.subheader("The Animation Module uses deep learning to generate keypoints, the Conventional Video Codec handles input, and the Fusion Module produces the final output.")
-    st.write("")
+    st.subheader("The below graph shows a comparison between HDAC and other deep learning models based on PSNR. Note how HDAC performs best at low bitrate.")
+    st.image("images/hdac2.png", caption="HDAC Comparison")
+    
     st.subheader("Continue to the next page on the left to see what HDAC is capable of and run it yourself.")
 
 # Second page
@@ -40,13 +41,13 @@ elif selected_page == "HDAC's Performance":
     
     st.subheader('Comparisons between original low-quality videos and refined videos produced by HDAC')
     st.video("videos/1-comparison.mp4")
-    st.video("videos/2-comparison.mp4")  #display sample HDAC output videos
+    st.video("videos/2-comparison.mp4")  
     st.subheader('Video demonstrating the keypoints HDAC uses during refinement')
     st.video("videos/3-keypoints.mp4")
     
     st.subheader('Sample metric data')
     df_metrics = pd.DataFrame(list(metrics.items()), columns=['Metric', 'Value'])
-    st.table(df_metrics) #display sample metrics in table
+    st.table(df_metrics)
 
     st.subheader('Click the button below to run HDAC. It will output metrics and videos after each iteration.')
     st.subheader('The status of the process can be monitored in the terminal. Control + C to stop execution.')
