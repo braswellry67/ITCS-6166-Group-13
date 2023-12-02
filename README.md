@@ -1,4 +1,4 @@
-# Recreation of Ultra-low bitrate video compression using deep animation models
+# Recreation of "Ultra-low bitrate video compression using deep animation models"
 This repository is a recreation of https://github.com/Goluck-Konuko/animation-based-codecs.
 
 It contains the source code for the papers
@@ -51,13 +51,15 @@ Place them in the ```conventional_codecs/``` folder.
 Set the ```eval_params``` on the ```config/[MODEL_NAME].yaml``` file to your liking (or use default) and run ```bash script_test.sh [MODEL_NAME]```.
 Additionally, the run.py file can be used to start the scripts.
 
+## Additional Information
+Email me at braswellry0607@gmail.com if there are any concerns regarding this project.
+
+For additional assistance in setting up the code, consult this document: https://docs.google.com/document/d/1lF4P59IoeOmoaX6x3N7DGGZ8LMWUfIXGgIq4eVunSX0
 
 ## Attributions
 This code base  contains source code from the following works:
 1.  [First Order Motion Model for Image Animation](https://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation) for the base architecture of deep image animation with unsupervised keypoints.
 2. [Compressai](https://github.com/InterDigitalInc/CompressAI) for Learned image compression.
 3. [JPEG-AI](https://gitlab.com/wg1/jpeg-ai/jpeg-ai-qaf) for evaluation metrics.
+4. [Animation Based Codecs](https://github.com/Goluck-Konuko/animation-based-codecs) for the project we recreated
 
-## Additional Information
-Email me at braswellry0607@gmail.com if there are any concerns regarding this project.
-For additional assistance in setting up the code, consult this document: https://docs.google.com/document/d/1lF4P59IoeOmoaX6x3N7DGGZ8LMWUfIXGgIq4eVunSX0
