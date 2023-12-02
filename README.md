@@ -46,13 +46,17 @@ The default setup uses a single GPU (NVIDIA-A100). However, training DAC, HDAC a
 Additionally, the run.py file can be used to start the scripts.
 
 ## Testing
-Conventional video codecs (HEVC, VTM) can be downloaded from  [this link.(https://drive.google.com/drive/folders/1KJELtQO_RvpFqu9YZYaXhyOksdbv9zWh) Place them in the ```conventional_codecs/``` folder.
+Conventional video codecs (HEVC, VTM) can be downloaded from this link: (https://drive.google.com/drive/folders/1KJELtQO_RvpFqu9YZYaXhyOksdbv9zWh) 
+Place them in the ```conventional_codecs/``` folder.
 Set the ```eval_params``` on the ```config/[MODEL_NAME].yaml``` file to your liking (or use default) and run ```bash script_test.sh [MODEL_NAME]```.
 Additionally, the run.py file can be used to start the scripts.
 
 
-### Attributions
+## Attributions
 This code base  contains source code from the following works:
 1.  [First Order Motion Model for Image Animation](https://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation) for the base architecture of deep image animation with unsupervised keypoints.
 2. [Compressai](https://github.com/InterDigitalInc/CompressAI) for Learned image compression.
 3. [JPEG-AI](https://gitlab.com/wg1/jpeg-ai/jpeg-ai-qaf) for evaluation metrics.
+
+## Contact
+Email me as braswellry0607@gmail.com if there are any concerns regarding this project.
