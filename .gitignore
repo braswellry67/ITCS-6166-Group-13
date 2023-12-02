@@ -10,3 +10,4 @@ venv
 .git
 .vs
 cpks/
+__pycache__
