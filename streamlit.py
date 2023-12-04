@@ -24,7 +24,6 @@ if selected_page == "HDAC Overview":
     
     st.image("images/hdac.jpg", caption="HDAC Framework")
     st.subheader("HDAC consists of three main parts: The Animation Module, Conventional Video Codec, and Fusion Module, each with their own unique function.")
-    st.write("")
     st.subheader("The below graph shows a comparison between HDAC and other deep learning models based on PSNR. Note how HDAC performs best at low bitrate.")
     st.image("images/hdac2.png", caption="HDAC Comparison")
     st.subheader("Comparison between various conventional codecs and codecs utilizing deep learning including HDAC.")
