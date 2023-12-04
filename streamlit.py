@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import subprocess
-command = ["python", "run.py", "--mode", "test", "--log_dir", "results", "--config", "config/hdac.yaml", "--checkpoint", "cpks/hdac.pt", ">", "metrics.txt"] # Command to run HDAC
+command = ["python", "run.py", "--mode", "test", "--log_dir", "results", "--config", "config/hdac.yaml", "--checkpoint", "cpks/hdac.pt"] # Command to run HDAC
 metrics = { #metrics for table taken from HDAC output logs
     "psnr": 30.208308696746826,
     "lpips": 0.08447073044953868,
@@ -27,6 +27,8 @@ if selected_page == "HDAC Overview":
     st.write("")
     st.subheader("The below graph shows a comparison between HDAC and other deep learning models based on PSNR. Note how HDAC performs best at low bitrate.")
     st.image("images/hdac2.png", caption="HDAC Comparison")
+    st.subheader("Comparison between various conventional codecs and codecs utilizing deep learning including HDAC.")
+    st.image("images/hdac3.jpg", caption="HDAC Comparison")
     
     st.subheader("Continue to the next page on the left to see what HDAC is capable of and run it yourself.")
 
@@ -39,7 +41,9 @@ elif selected_page == "HDAC's Performance":
     st.subheader("Three videos are produced based on the provided dataset and can be seen in greater detail below.")
     st.write("--------------------------------------------")
     
-    st.subheader('Comparisons between original low-quality videos and refined videos produced by HDAC')
+    st.subheader('Higher quality video produced by the HDAC model')
+    st.video("videos/3-updated.mp4")
+    st.subheader('Comparisons between original low-quality videos and refined videos')
     st.video("videos/1-comparison.mp4")
     st.video("videos/2-comparison.mp4")  
     st.subheader('Video demonstrating the keypoints HDAC uses during refinement')
